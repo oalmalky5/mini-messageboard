@@ -9,7 +9,7 @@
       <h1 class="title"><%= title %></h1>
     </section>
   
-    <a href= <%=`http://localhost:${process.env.PORT || 5000}/new`%>><button>Say something</button></a>
+    <a href=`https://warm-refuge-38881.herokuapp.com/new`><button>Say something</button></a>
     <ul>
         <% messages.forEach(message => { %>
             <li>Message: <%= message.text %></li>
