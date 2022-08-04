@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <section class="header">
+      <h1 class="title"><%= title %></h1>
+    </section>
+  
+    <a href= <%=`http://localhost:${process.env.PORT || 3000}/new`%>><button>Say something</button></a>
+    <ul>
+        <% messages.forEach(message => { %>
+            <li>Message: <%= message.text %></li>
+            <li>Name: <%= message.user %></li>
+            <li>Date: <%= message.added %></li>
+            <br/>
+        <% }) %>  
+    </ul>
+
+
+
+  </body>
+</html>
