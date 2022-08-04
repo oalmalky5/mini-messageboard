@@ -9,7 +9,7 @@
       <h1 class="title"><%= title %></h1>
     </section>
   
-    <a href= <%=`http://localhost:${process.env.PORT || 6245}/new`%>><button>Say something</button></a>
+    <a href= <%=`http://localhost:${process.env.PORT}/new`%>><button>Say something</button></a>
     <ul>
         <% messages.forEach(message => { %>
             <li>Message: <%= message.text %></li>
