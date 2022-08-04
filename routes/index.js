@@ -1,5 +1,7 @@
 var express = require('express');
+const app = require('../app');
 var router = express.Router();
+const PORT = process.env.PORT || 5000
 
 
 const messages = [
@@ -29,5 +31,5 @@ router.post('/new', (req, res, next) => {
   res.redirect('/')
 })
 
-
+app.listen(PORT)
 module.exports = router;
